@@ -1,0 +1,89 @@
+- date => shows date 
+- ncal => new calender (vertical and highlighted day)
+- cal => new calender (horizontal and without highlighted day)
+- man ncal => mannual page -> give all information about a command
+
+- whoami command => no options ->
+    - --help
+    - -version
+
+- who --all -> time of boot computer (turn on), who did turn on computer etc.
+-  cd / -> go to the main root in terminal of ubuntu
+- pwd -> path working directory 
+- mkdir -p nameOfParenFolder/nameOfChildfolder
+- /mnt/c/Users/sahar/OneDrive/desktop -> command change directory in ubuntu from root to desktop
+- ll  (long listing)-> abbreviation of ls -l command -> lists the files and directories in your current directory in a long format, providing detailed information such as file permissions, number of links, owner, group, size, and time of last modification
+
+- you have text file -> 
+    - enter file and starting writing -> vim info.txt
+    - OB -> start writing 
+    - ESC -> being able to write -> 
+        - :w -> save the file
+        - :q -> quit
+        - :wq -> write and quit
+        - !:q -> (quit and do not save).
+
+- change lengh of line in nano in ubumtu ->
+        - Open ubuntu -> 
+            - nano -$ name of file 
+
+- Meta key in ubumtu on windows -> alt key on windows
+- alt + \ -> come back cursor to the first line of the file 
+- to warp several lines in one line by nano in ubuntu bu command -> nano -$ file.txt
+- meta key -> in windows, ubuntu -> Esc key -> Macbook 
+- change to root directory -> cd  / 
+- for going to etc directory -> 
+        -   cd  /
+            ls  -l  -> listing all directories or files in root 
+            cd /etc/ -> change directory to etc
+            /mnt/c/Users/sahar/OneDrive/desktop -> again change from root to desktop 
+
+- cd /mnt/d/ -> change drive to D derive
+- >   -> to exit from it -> ^c (ctrl + c)
+- ~ -> home directory
+- create several directories in the same time with only one command in linux ubuntu -> mkdir folder{1..50} 
+
+
+- cd -- "thesis, article" -> if we want to change the directory with strange name  
+- rm -fr <name of file, folder for removing> 
+- ssh connection between to local machines-> disconnection -> ctrl + d 
+- cat <nameOfFile> -> show content of the file 
+- rm -> remove files -> very careful about it -> files will be gone (not in the trash bine)
+- rm -d or rmdir -> remove of direc> -> remove empty directories
+- rm -r -> remove of direc> -> remove empty or non-empty directories
+- cp nameOfTheFile nameOfTheDirectory 
+
+- ctrl + D -> REMOVE LETTER
+- ctrl + W -> remove all commend 
+- crtl + r -> search between commands 
+- cat <nameOfFile> -> show content of the file
+- cat <nameOfFile>  <nameOfFile> -> how content of the files 
+- nano -$ file.txt -> to warp long line in text in ubunto in several short lines
+- less -Ni poem.txt -> show content of text with line-number and search insensitive letter 
+- cat poem.txt | wc -w -> show the number of words in text 
+- awk 'NR==5' poem.txt | wc -w -> ????? 
+- sed -n '1,2p' poem.txt | wc -w -> number of word  between specified lines in ubuntu
+- sort file.txt -> print sort the content of the text alphabetically 
+-  cat purchases.txt | sort -u -k3 -> Sort based on the third column
+-  cat purchases.txt | sort -u -rk3 -> Sort based on the reverses third column 
+- wc -l example.txt -> number of LINE in the text 
+- wc -w poem.txt -> numer of words in the text 
+
+- sort all-species.txt| uniq > sorted-animals1.txt   (second command  -> sort -u all-species.txt > sorted-animals.txt) -> we have a text with duplicated data -> sort according to alphabet and remove duplicated data 
+- cat >> file.txt or echo name of appending word >> file.txt -> when we want to append a word to end of text without opening it by GUI or nano  
+
+- ls file.txt | wc -l -> find number of files in one directory by piping 
+
+- create several files ->
+    - seq 10  -> create number 1-10
+    - seq 10 | xargs -I {} touch {}.txt -> create 10 files 1-10.txt 
+    - seq 10 | xargs -I {} touch foo{}.txt -> create 10 files 1-10.txt 
+    
+
+
+- commands for change the names of the files name ->
+    - mv 1.txt 11.txt
+    - for loop command ->
+        - for x in *.txt; do command; done -> for x in *.txt; do mv -- "$x" "${x%.txt}.text"; done     -> **(point -> -- means after that they are not flags or options)**
+    - find . -name "*.docs" -exec sh -c 'x="{}"; mv -- "$x" "${x%.docs}.txt"' \; 
+

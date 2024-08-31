@@ -1,0 +1,62 @@
+- OS (operating system) =>
+    - windows => the most popular 
+    - android , ubuntu 
+    - macOS , IOS 
+
+- Classification of the OS =>
+    - Microsoft family ( windows family) => 
+    - UNIX family ( linux, ios, macOS family, Android, ubuntu family) 
+
+- Unix OP => In the mid of 1960s, in Bell lab  
+- Unix mission => 
+    - Modular software design 
+    - creation of small individual programs => combined together and perform complex tasks  
+
+- Unix- true => a trade mark that proves and standard and certification to OP => macOS, IOS etc.
+- Unix-like => similar to unix but not direct relationship between them => linux , ubuntu  
+- shell => computer interface to an OS 
+- terminal => a program  which runs a shell 
+- prompt => open terminal => userName@ laptopName ~$ => prompt => first line of terminal => means ->
+        - ready to accept input from user 
+
+- > instead of prompt => can not execute new commands => ctrl + c key for quit of it 
+
+- If we forget password ubuntu of windows subsystem of linux => 
+    - Go to the windows power shell terminal
+    - run command of => wsl -u root
+    - run command of => passwd <username>(sahar)
+    - Enter new password
+
+- [option] for command  => needs --  OR - 
+- argument(s) for command  => does not need --  OR - 
+
+- / => top level root
+- ~ => home directory 
+
+- Relative path -> it will be started from current location for example -> 
+current location is desktop and there are dogs cats etc , inside dogs there is puppi folder ->
+    - you can go ->  desktop cd dogs or for puppi -> desktop dogs/puppi -> 
+    - you can not go -> puppi cd desktop -> instead -> puppi cd ../../ 
+
+- drwxrwxrwx -> A directory that allows read, write, and execute permissions for users, groups, and all others
+- rwxrwxrwx -> a file that allows read, write, execute permission for users, groups, and all others
+
+
+- Absolute path -> starts from root to any where -> starts with  -> /
+- Nano -> editing file in command line 
+
+- ECDSA (Elliptic Curve Digital Signature Algorithm) -> an asymmetric key encryption algorithm that uses elliptic curve cryptography to produce keys and sign data
+- ECC -> elliptic curve cryptography ->greater cryptographic strength with shorter key lengths, making it ideal for devices with limited computing power.
+
+- data stream -> example -> find /etc -type f > ~/results.txt 2> ~/errors.txt 
+    - stdin -> ----- 
+    - stdout -> > -> stdout 
+    - stderr ->  2> stderr 
+
+- any command -> 
+    - if it has successful output -> return 0  (in command) -> check with -> echo $?
+    - if it does not have successful output -> return non-0  (in command) -> check with -> echo $? -> stderr 
+
+
+
+--------------- Continue studu piping and exercise -> tomorrow----------------

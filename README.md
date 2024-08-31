@@ -1,1 +1,1 @@
-# linux_31_08_2024-
+- piping and change the name of several files (several command) and practice
